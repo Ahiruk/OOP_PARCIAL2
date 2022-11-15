@@ -1,0 +1,27 @@
+@startuml
+class Sala{
+disponibilidad :int
+reservar()
+cancelar()
+}
+
+class Usuario{
+nombre: str
+preferencia:int
+reservar()
+cancelar()
+}
+
+class Asiento{
+tipo: int
+}
+
+Class Peliculas{
+nombre:str
+hora:str
+}
+
+Asiento --* Sala
+Peliculas --* Sala
+Usuario --* Sala
+@enduml
